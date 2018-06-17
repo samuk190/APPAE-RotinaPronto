@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/viewFlipper2"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/ivbrincar"
+                android:layout_width="match_parent"
+                android:layout_height="462dp"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/brincar" />
+
+            <ImageView
+                android:id="@+id/ivcomida"
+                android:layout_width="match_parent"
+                android:layout_height="332dp"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/comida" />
+
+            <ImageView
+                android:id="@+id/ivbanho"
+                android:layout_width="match_parent"
+                android:layout_height="332dp"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/banho" />
+
+            <ImageView
+                android:id="@+id/ivbanheiro"
+                android:layout_width="match_parent"
+                android:layout_height="332dp"
+                android:layout_above="@+id/next"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/viewFlipper"
+                android:layout_toRightOf="@+id/viewFlipper"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/banheiro" />
+
+        </ViewFlipper>
+
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <ImageView
+                android:id="@+id/ivcabelo"
+                android:layout_width="499dp"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/cabelo" />
+
+            <ImageView
+                android:id="@+id/ivestudar"
+                android:layout_width="346dp"
+                android:layout_height="344dp"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/estudar" />
+
+            <ImageView
+                android:id="@+id/ivdentes"
+                android:layout_width="346dp"
+                android:layout_height="344dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/viewFlipper"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/dentes" />
+
+            <ImageView
+                android:id="@+id/ivlavar"
+                android:layout_width="346dp"
+                android:layout_height="344dp"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/lavar" />
+        </ViewFlipper>
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mudar Imagem"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/next"
+            android:text="Mudar Imagem" />
+
+
+
+    </RelativeLayout>

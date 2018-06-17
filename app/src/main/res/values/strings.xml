@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">APPAE - Rotina e Higiene</string>
+    <string-array name="opcoes">
+        <item>Tomar banho</item>
+        <item>Ir ao banheiro</item>
+        <item>Comer</item>
+        <item>Brincar</item>
+        <item>Pentear o cabelo</item>
+        <item>Escovar os dentes</item>
+        <item>Lavar as maos</item>
+        <item>Estudar</item>
+    </string-array>
+</resources>

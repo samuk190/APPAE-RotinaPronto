@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper2"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:clickable="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="681dp"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:src="@drawable/icabelo" />
+    </ViewFlipper>
+
+    <Button
+        android:id="@+id/buttonLoadPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Escolher Imagem"
+        android:layout_gravity="center" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/trocar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:text="Trocar Imagem" />
+
+</LinearLayout>
